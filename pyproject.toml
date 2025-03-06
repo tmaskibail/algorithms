@@ -1,0 +1,25 @@
+[project]
+name = "algorithms"
+version = "0.1.0"
+description = "Playground for algorithms"
+authors = [
+    { name = "tmaskibail", email = "59851752+tmaskibail@users.noreply.github.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+
+[tool.poetry]
+packages = [
+    { include = "algorithms/*.py", from = "src" },
+]
+
